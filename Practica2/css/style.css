@@ -1,27 +1,17 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+/* Error: Expected expression.
+ *    ,
+ * 20 |     left: ;
+ *    |           ^
+ *    '
+ *   sass\style.scss 20:11  root stylesheet */
 
-header {
-  width: 100%;
-  height: 20vh;
-  background-color: darkgrey;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 20 \2502      left: ;\d\a    \2502            ^\a    \2575 \a   sass\\style.scss 20:11  root stylesheet";
 }
-
-#titulo {
-  color: black;
-  font-family: "Indie Flower", cursive;
-  font-size: 50px;
-  text-align: center;
-  font-weight: bolder;
-  position: absolute;
-  left: 200px;
-  top: 20px;
-}
-
-section{
-  background-color: chartreuse;
-}
-
-/*# sourceMappingURL=style.css.map */
