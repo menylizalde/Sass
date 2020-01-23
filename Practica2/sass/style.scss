@@ -1,26 +1,60 @@
+
 *{
     margin: 0px;
     padding: 0px;
 }
-
 header{
- background-color: slategrey;
- width: 100%;
- height: 20%;
+    width: 100%;
+    height: 20vh;
+    background: darkgray;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+
 }
 
 #titulo{
-   color: black;
+    color: black;
     font-family: 'Indie Flower', cursive;
     font-size: 50px;
     text-align: center;
     font-style: normal;
-    font-weight: bolder;
     position: absolute;
-    left: ;
-    top: ;
+    left: 200px;
+    top: 30px;
+}
 
+#texto1{
+    width: 75%;
+    height: 80vh;
+    background-color:greenyellow;
+}
+
+h2{
+    text-align: justify;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
     
+}
+#parte1{
+    padding: 20px 5px;
+    color: white;
+    width: 32vw;
+    height: 25vh;
+    text-align: justify;
+}
 
-
+h3{
+    text-align: justify;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#parte2{
+    padding: 20px 5px;
+    color: white;
+    width: 16vw;
+    height: 55vh;
+    text-align: justify;
 }
