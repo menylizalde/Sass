@@ -10,7 +10,12 @@ header{
     border-style: solid;
     border-width: 2px;
     border-color: white;
+}
 
+section{
+    background-color: hotpink;
+    width: 80%;
+    height: 80vh;
 }
 
 #titulo{
@@ -23,38 +28,48 @@ header{
     left: 200px;
     top: 30px;
 }
-
 #texto1{
-    width: 75%;
-    height: 80vh;
+    width: 85%;
+    height: 100vh;
+    background-color: greenyellow;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    width: 40%;
+    height: 30vh;
+}
+
+.parrafo1{
+    text-align: justify;
+    padding: 5px 5px;
+    font-family: inherit;
+}
+
+#texto2{
     background-color:greenyellow;
+    width: 32%;
+    height: 50vh;
+    color: white;
+    text-align: justify;
+    font-size: 20px ;
 }
 
-h2{
+.parrafo2{
+    background-color: blue;
     text-align: justify;
-    color: white;
-    font-weight: bolder;
-    font-size: 30px;
-    
-}
-#parte1{
-    padding: 20px 5px;
-    color: white;
-    width: 32vw;
-    height: 25vh;
-    text-align: justify;
+    padding: 5px 5px;
+    font-family: inherit;
 }
 
-h3{
-    text-align: justify;
-    color: white;
-    font-weight: bolder;
-    font-size: 30px;
-}
-#parte2{
-    padding: 20px 5px;
-    color: white;
-    width: 16vw;
-    height: 55vh;
-    text-align: justify;
+#texto3{
+   background-color: blue;
+   width: 40%;
+   height: 30vh; 
+   font-size: 20px;
+       font-family: inherit;
+   text-align: justify;
+   color: white;
+   float: inherit;
+   
+
 }

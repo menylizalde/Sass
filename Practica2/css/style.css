@@ -12,6 +12,12 @@ header {
   border-color: white;
 }
 
+section {
+  background-color: hotpink;
+  width: 80%;
+  height: 80vh;
+}
+
 #titulo {
   color: black;
   font-family: "Indie Flower", cursive;
@@ -24,39 +30,47 @@ header {
 }
 
 #texto1 {
-  width: 75%;
-  height: 80vh;
+  width: 85%;
+  height: 100vh;
   background-color: greenyellow;
-}
-
-h2 {
+  font-size: 20px;
   text-align: justify;
   color: white;
-  font-weight: bolder;
-  font-size: 30px;
+  width: 40%;
+  height: 30vh;
 }
 
-#parte1 {
-  padding: 20px 5px;
-  color: white;
-  width: 32vw;
-  height: 25vh;
+.parrafo1 {
   text-align: justify;
+  padding: 5px 5px;
+  font-family: inherit;
 }
 
-h3 {
-  text-align: justify;
+#texto2 {
+  background-color: greenyellow;
+  width: 32%;
+  height: 50vh;
   color: white;
-  font-weight: bolder;
-  font-size: 30px;
+  text-align: justify;
+  font-size: 20px;
 }
 
-#parte2 {
-  padding: 20px 5px;
-  color: white;
-  width: 16vw;
-  height: 55vh;
+.parrafo2 {
+  background-color: blue;
   text-align: justify;
+  padding: 5px 5px;
+  font-family: inherit;
+}
+
+#texto3 {
+  background-color: blue;
+  width: 40%;
+  height: 30vh;
+  font-size: 20px;
+  font-family: inherit;
+  text-align: justify;
+  color: white;
+  float: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
