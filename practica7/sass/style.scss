@@ -1,0 +1,68 @@
+
+body{
+    margin: 100px;
+    padding: 100px;
+    width: 70vw;
+    height: 70vh;
+}
+#caja{
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(85, 95, 233);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.border{
+    width: 30px;
+    height: 30px;
+    background: yellowgreen;
+    border-radius: 50%;
+    position: absolute;
+    animation: border 5s linear infinite;
+}
+
+
+// p{
+//     border-radius: initial;
+//     width: 30px;
+//     height: 30px;
+//     background: yellowgreen;
+// }
+// .border{
+//     border: 5px solid yellowgreen;
+//     padding: 10px;
+//     border-radius: 50px;
+// }
+// .border {
+//     display: flex;
+//     animation: slider  10s linear infinite alternate;
+// }
+
+@keyframes  border {
+   0%{ 
+       top: 0%;
+       left: 0%;
+
+   }
+   25%{
+       top: calc(100% - 30px) ;
+       left: 25%;
+   }
+   50%{
+       top: 50%;
+       left: 50%;
+
+   }
+   75%{
+       top: calc(100% - 30px) ;
+       left: 75%;
+
+   }
+   100%{
+       top: 25%;
+       left: 100%;
+
+   }
+}
