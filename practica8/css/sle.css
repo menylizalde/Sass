@@ -5,16 +5,24 @@
 
 header {
   width: 100%;
-  height: 15vh;
-  background: #DCDEDC;
+  height: 20vh;
+  background: #9c9e9c;
 }
 
 .letraf {
   color: black;
   font-size: 100px;
+  font-family: "Fira Sans", sans-serif;
   position: absolute;
   left: 10px;
   top: 0px;
+}
+
+.slogan {
+  color: chartreuse;
+  font-family: "Fira Sans", sans-serif;
+  position: absolute;
+  left: 240px;
 }
 
 .circulo {
@@ -25,6 +33,15 @@ header {
   position: relative;
   left: 80px;
   top: 10px;
+}
+
+.revista {
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  color: chartreuse;
+  position: relative;
+  top: 25px;
+  text-align: center;
 }
 
 ul {
@@ -43,20 +60,25 @@ li a {
   font-weight: 300;
   display: block;
   color: white;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Teko", sans-serif;
   text-align: center;
   text-decoration: none;
-  padding: 10px 65px;
+  padding: 10px 32px;
   border-right: 15px white solid;
 }
 
 li a:hover:not(.active) {
+  background: #afb9af;
+}
+
+.active {
   background: #DCDEDC;
+  color: black;
 }
 
 .imagen {
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
   background: url("./../img/ejemplo.jpg") no-repeat fixed;
   background-size: 100% 100%;
   display: flex;
@@ -65,9 +87,108 @@ li a:hover:not(.active) {
 }
 
 .hijo {
+  position: relative;
   width: 95%;
   height: 90%;
   border: 3px white solid;
+}
+
+.texto {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 85%;
+  left: 2%;
+}
+
+.rev {
+  color: white;
+  font-size: 20px;
+  font-family: "Fira Sans", sans-serif;
+  position: relative;
+  top: 15%;
+  left: 65%;
+}
+
+.forum {
+  color: white;
+  font-size: 60px;
+  font-family: "Fira Sans", sans-serif;
+  position: relative;
+  top: 10%;
+  left: 65%;
+}
+
+.circulo2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid chartreuse;
+  position: relative;
+  left: 67%;
+  bottom: 20%;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.contenedor {
+  margin: 5px;
+  width: 100%;
+  height: 40vh;
+  background: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: left;
+}
+
+.contenedor1 {
+  border: 3px solid white;
+  background: #840495;
+  width: 25vw;
+  position: relative;
+}
+
+.contenedor2 {
+  border: 3px solid white;
+  background: #454346;
+  width: 25vw;
+  position: relative;
+}
+
+.contenedor3 {
+  border: 3px solid white;
+  background: #840495;
+  width: 25vw;
+  position: relative;
+}
+
+.imagen2 {
+  border: 3px solid white;
+  background: url(./../img/hoja.jpg);
+  width: 25vw;
+  position: relative;
+}
+
+.radio {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px solid white;
+  position: relative;
+  left: 90px;
+  top: 70px;
+  position: relative;
+}
+
+.emprendedor {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid chartreuse;
+  position: relative;
+  left: 90px;
+  top: 70px;
+  position: relative;
 }
 
 /*# sourceMappingURL=sle.css.map */
