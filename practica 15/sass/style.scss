@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -9,7 +10,7 @@ header{
     height: 100px;
 }
 header .boxyellow{
-    width: 332px;
+    width: 25vw;
     height: 100px;
     background: rgb(237, 205, 31);
     position: absolute;
@@ -30,20 +31,20 @@ top: 15px;
     width: 47px;
     height: 49px;
     position: relative;
-    top: -80px;
+    top: 15px;
     left: 10px;
 }
 .site{
     display: grid;
     justify-content: end;
-    height: 100px;
-    width: 1349vw;
+    // height: 100px;
+    // width: 1349vw;
     
 }
 .home{
     margin: 0;
     color: white;
-    width: 1349px;
+    width: 7w;
     height: 100px;
     position: absolute;
     top: 0px;
@@ -71,4 +72,7 @@ li a:visited{
 }
 li a:hover{
    color:  rgb(237, 205, 31);
+}
+section{
+    width: 100vw;
 }
