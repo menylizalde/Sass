@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 100px;
+}
+
+header .boxyellow {
+  width: 332px;
+  height: 100px;
+  background: #edcd1f;
+  position: absolute;
+  top: 0px;
+}
+
+.esfera {
+  width: 217px;
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 0.05em;
+  line-height: 1em;
+  vertical-align: baseline;
+  position: relative;
+  left: 88px;
+  top: 15px;
+}
+
+.iconoc {
+  width: 47px;
+  height: 49px;
+  position: relative;
+  top: -80px;
+  left: 10px;
+}
+
+.site {
+  display: grid;
+  justify-content: end;
+  height: 100px;
+  width: 1349vw;
+}
+
+.home {
+  margin: 0;
+  color: white;
+  width: 1349px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 332px;
+  background: #1E2D3B;
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+}
+
+li {
+  margin: 50px;
+  float: left;
+  justify-content: right;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+  line-height: 37px;
+}
+
+li a:visited {
+  color: white;
+}
+
+li a:hover {
+  color: #edcd1f;
+}
+
+/*# sourceMappingURL=style.css.map */
