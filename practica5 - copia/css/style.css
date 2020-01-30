@@ -21,34 +21,12 @@ body {
   justify-content: space-around;
 }
 
-.contenedor .row > div {
-  width: 20vw;
-  height: 20vh;
-  border: 2px solid #ffffff;
-  opacity: 0.5;
-  color: white;
-}
-
 img {
   width: 20vw;
   height: 20vh;
   display: block;
   border: 2px solid #ffffff;
   opacity: 0.5;
-}
-
-.contenedor > .row > div > span {
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-}
-
-span {
-  display: block;
-  position: absolute;
 }
 
 img::after {
