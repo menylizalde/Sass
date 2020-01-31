@@ -76,3 +76,32 @@ li a:hover{
 section{
     width: 100vw;
 }
+.video{
+    position: relative;
+    display: flex;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+.video::before{
+    content: '';
+    position: absolute;
+    width: calc(100%);
+    background: #FFF;
+}
+.txt{
+    width: 600px;
+    left: 30%;
+    text-align: center;
+    background: white;
+    padding: 10px 10px;
+    position: absolute;
+    background: none;
+    font-size: 30px;
+    color:  #EDCD1F;
+    vertical-align: baseline;
+    line-height: 2.1em;
+    letter-spacing: 0.05em;
+    font-family: 'Anton', sans-serif;
+
+}
