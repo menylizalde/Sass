@@ -1,12 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 header {
-  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  width: 45vw;
   height: 100px;
 }
 
@@ -14,20 +16,22 @@ header .boxyellow {
   width: 25vw;
   height: 100px;
   background: #edcd1f;
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  z-index: 100;
 }
 
 .esfera {
+  margin: 0px;
   width: 217px;
   text-align: left;
   font-size: 22px;
   letter-spacing: 0.05em;
   line-height: 1em;
   vertical-align: baseline;
-  position: relative;
   left: 88px;
   top: 15px;
+  position: fixed;
+  z-index: 100;
 }
 
 .iconoc {
@@ -36,9 +40,13 @@ header .boxyellow {
   position: relative;
   top: 15px;
   left: 10px;
+  position: fixed;
+  z-index: 100;
 }
 
 .site {
+  width: 75vw;
+  margin: 0px;
   display: grid;
   justify-content: end;
 }
@@ -46,15 +54,15 @@ header .boxyellow {
 .home {
   margin: 0;
   color: white;
-  width: 7w;
   height: 100px;
-  position: absolute;
   top: 0px;
   left: 332px;
   background: #1E2D3B;
   list-style-type: none;
   display: flex;
   overflow: hidden;
+  position: fixed;
+  z-index: 100;
 }
 
 li {
@@ -84,6 +92,7 @@ section {
 }
 
 .video {
+  width: 100%;
   position: relative;
   display: flex;
   text-align: center;
@@ -112,6 +121,20 @@ section {
   line-height: 2.1em;
   letter-spacing: 0.05em;
   font-family: "Anton", sans-serif;
+}
+
+.servicios {
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+.servicios .encabezado1 {
+  padding: 90px;
+  letter-spacing: 0.05em;
+  color: #c6c6c6;
+  font-family: "Anton", sans-serif;
+  font-size: 30px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
