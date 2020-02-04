@@ -1,0 +1,31 @@
+$color1:#edcd1f;
+$color2:#1e2d3b;
+
+body{
+    margin: 0;
+    padding: 0;
+
+    header{
+        background: $color2;
+        
+        div{
+            left: 30px;
+            width: 25vw;
+            height: 15vh;
+            background-color: $color1;
+            color:$color2;
+            text-align: left;
+            font-size: 10px;
+            font-family: 'Nunito', sans-serif;
+            
+            & h1{
+                color: $color2;
+                position: relative;
+                top: 20%;
+                left: 40%;
+                
+            }
+        }
+        
+    }
+}
