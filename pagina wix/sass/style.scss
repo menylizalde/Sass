@@ -1,31 +1,115 @@
-$color1:#edcd1f;
-$color2:#1e2d3b;
+$color1: #edcd1f;
+$color2: #1e2d3b;
+$font: "Lato", sans-serif;
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 
-    header{
-        background: $color2;
-        
-        div{
-            left: 30px;
-            width: 25vw;
-            height: 15vh;
-            background-color: $color1;
-            color:$color2;
-            text-align: left;
-            font-size: 10px;
-            font-family: 'Nunito', sans-serif;
-            
-            & h1{
-                color: $color2;
-                position: relative;
-                top: 20%;
-                left: 40%;
-                
-            }
-        }
-        
+  header {
+    background: $color1;
+    width: 25vw;
+    height: 15vh;
+    position: fixed;
+    & div img {
+      position: relative;
+      left: 20px;
+      top: 20px;
     }
+    & div h1 {
+      width: min-content;
+      color: $color2;
+      position: relative;
+      left: 90px;
+      bottom: 50px;
+      font-size: 22px;
+      font-family: "Lato", sans-serif;
+      letter-spacing: 0.05em;
+    }
+    & div ul {
+      margin: 0px;
+      padding: 0px 0px;
+      left: 341px;
+      bottom: 100%;
+      top: -0px;
+      position: absolute;
+      width: 75vw;
+      height: 15vh;
+      background: $color2;
+      list-style-type: none;
+      overflow: hidden;
+      & li {
+        float: left;
+        & a {
+          display: block;
+          color: #fafafa;
+          font-family: $font;
+          text-align: center;
+          padding: 40px 50px;
+          text-decoration: none;
+        }
+        & a:hover {
+          color: $color1;
+        }
+      }
+    }
+  }
+  section {
+    height: 300vh;
+    & div {
+      & video {
+        width: 100vw;
+      }
+      & h1 {
+        margin: 0px;
+        width: 700px;
+        height: 200px;
+        text-align: center;
+        font: 60px $font;
+        color: #ffffff;
+        letter-spacing: 0.05em;
+        line-height: 1.1em;
+        background-color: blu;
+        position: absolute;
+        left: 25%;
+        top: 50%;
+      }
+    }
+  }
+  section {
+    & h2 {
+      color: #c6c6c6;
+      font-family: "Lato", sans-serif;
+      text-align: center;
+      font-size: 55px;
+      letter-spacing: 0.05em;
+    }
+    & .planeamiento {
+      background: #f7f7f7;
+      position: relative;
+      left: 200px;
+      bottom: 0px;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    & .maquetas {
+      background: #f7f7f7;
+      position: relative;
+      left: 520px;
+      bottom: 474px;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    & .construccion {
+      background: #f7f7f7;
+      position: relative;
+      left: 840px;
+      bottom: 950px;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    &.construccion{
+      background: red;
+    }
+  }
 }

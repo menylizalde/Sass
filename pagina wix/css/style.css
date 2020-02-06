@@ -3,23 +3,106 @@ body {
   padding: 0;
 }
 body header {
-  background: #1e2d3b;
-}
-body header div {
-  left: 30px;
+  background: #edcd1f;
   width: 25vw;
   height: 15vh;
-  background-color: #edcd1f;
-  color: #1e2d3b;
-  text-align: left;
-  font-size: 10px;
-  font-family: "Nunito", sans-serif;
+  position: fixed;
+}
+body header div img {
+  position: relative;
+  left: 20px;
+  top: 20px;
 }
 body header div h1 {
+  width: min-content;
   color: #1e2d3b;
   position: relative;
-  top: 20%;
-  left: 40%;
+  left: 90px;
+  bottom: 50px;
+  font-size: 22px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.05em;
+}
+body header div ul {
+  margin: 0px;
+  padding: 0px 0px;
+  left: 341px;
+  bottom: 100%;
+  top: 0px;
+  position: absolute;
+  width: 75vw;
+  height: 15vh;
+  background: #1e2d3b;
+  list-style-type: none;
+  overflow: hidden;
+}
+body header div ul li {
+  float: left;
+}
+body header div ul li a {
+  display: block;
+  color: #fafafa;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  padding: 40px 50px;
+  text-decoration: none;
+}
+body header div ul li a:hover {
+  color: #edcd1f;
+}
+body section {
+  height: 300vh;
+}
+body section div video {
+  width: 100vw;
+}
+body section div h1 {
+  margin: 0px;
+  width: 700px;
+  height: 200px;
+  text-align: center;
+  font: 60px "Lato", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  line-height: 1.1em;
+  background-color: blu;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+body section h2 {
+  color: #c6c6c6;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 55px;
+  letter-spacing: 0.05em;
+}
+body section .planeamiento {
+  background: #f7f7f7;
+  position: relative;
+  left: 200px;
+  bottom: 0px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body section .maquetas {
+  background: #f7f7f7;
+  position: relative;
+  left: 520px;
+  bottom: 474px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body section .construccion {
+  background: #f7f7f7;
+  position: relative;
+  left: 840px;
+  bottom: 950px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body section.construccion {
+  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */
