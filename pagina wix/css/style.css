@@ -1,17 +1,20 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body header {
   background: #edcd1f;
   width: 25vw;
   height: 15vh;
   position: fixed;
+  z-index: 4;
 }
 body header div img {
   position: relative;
   left: 20px;
   top: 20px;
+  z-index: 4;
 }
 body header div h1 {
   width: min-content;
@@ -22,6 +25,7 @@ body header div h1 {
   font-size: 22px;
   font-family: "Lato", sans-serif;
   letter-spacing: 0.05em;
+  z-index: 4;
 }
 body header div ul {
   margin: 0px;
@@ -35,9 +39,11 @@ body header div ul {
   background: #1e2d3b;
   list-style-type: none;
   overflow: hidden;
+  z-index: 4;
 }
 body header div ul li {
   float: left;
+  z-index: 4;
 }
 body header div ul li a {
   display: block;
@@ -76,6 +82,7 @@ body section h2 {
   text-align: center;
   font-size: 55px;
   letter-spacing: 0.05em;
+  z-index: -1;
 }
 body section .planeamiento {
   background: #f7f7f7;
@@ -83,7 +90,6 @@ body section .planeamiento {
   left: 200px;
   bottom: 0px;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
 }
 body section .maquetas {
   background: #f7f7f7;
@@ -91,7 +97,6 @@ body section .maquetas {
   left: 520px;
   bottom: 474px;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
 }
 body section .construccion {
   background: #f7f7f7;
@@ -99,10 +104,106 @@ body section .construccion {
   left: 840px;
   bottom: 950px;
   display: block;
+}
+body section .nosotros {
+  width: 100%;
+  background: #fffff;
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: 1400px;
+}
+body section .nosotros h2 {
+  color: #c6c6c6;
+  position: relative;
+  bottom: 700px;
+}
+body section .nosotros img {
+  position: relative;
+  left: 50%;
+}
+body section .nosotros p {
+  position: relative;
+  bottom: 700px;
+  color: #3b3a3a;
+}
+body section .banner {
+  background: #edcd1f;
+  position: absolute;
+  top: 2090px;
+}
+body section .banner .numbers {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px;
+  list-style: none;
+}
+body section .banner .numbers li {
+  font-family: "Lato", sans-serif;
+  color: #f7f7f7;
+}
+body section .date {
+  position: relative;
+  top: -160px;
+}
+body section .conceptos {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px;
+  list-style: none;
+}
+body section .conceptos li {
+  text-align: center;
+  color: #1e2d3b;
+}
+body section div.proyectos {
+  position: absolute;
+  top: 2400px;
+  width: 100vw;
+  height: 300vh;
   font-family: Arial, Helvetica, sans-serif;
 }
-body section.construccion {
-  background: red;
+body section div.proyectos div.containerimg {
+  background: yellow;
+  display: flex;
+  width: 920px;
+  height: 470px;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body section div.proyectos div.containerimg div.imagenpro {
+  width: 50%;
+  position: relative;
+  height: 50% x;
+}
+body section div.proyectos div.containerimg div.imagenpro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body section div.proyectos div.containerimg div.imagenpro .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 118, 192, 0.781);
+  width: 100%;
+  transition: 1s ease;
+  overflow: hidden;
+}
+body section div.proyectos div.containerimg div.imagenpro .overlay h4 {
+  color: #fafafa;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.imagenpro:hover .overlay {
+  height: 100%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
