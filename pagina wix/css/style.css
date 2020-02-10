@@ -153,20 +153,20 @@ body section .banner .numbers li {
     margin-top: 0;
   }
   25% {
-    margin-top: 250px;
+    margin-top: 300px;
   }
 }
 body section .date {
   height: 250px;
   position: relative;
   top: -160px;
+  animation: cambiar 3s infinite;
 }
 body section .conceptos {
   display: flex;
   justify-content: space-around;
   margin: 70px;
   list-style: none;
-  animation: cambiar 3s infinite;
 }
 body section .conceptos li {
   text-align: center;

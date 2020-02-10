@@ -157,20 +157,20 @@ body {
       @keyframes cambiar{
         0%{margin-top: 0;}
         20%{margin-top: 0;}
-        25%{margin-top: 250px;}
+        25%{margin-top: 300px;}
       }
     }
     & .date {
       height: 250px;
       position: relative;
       top: -160px;
+      animation: cambiar 3s infinite;
     }
     & .conceptos {
       display: flex;
       justify-content: space-around;
       margin: 70px;
       list-style: none;
-      animation: cambiar 3s infinite;
       & li {
         text-align: center;
         color: $color2;
