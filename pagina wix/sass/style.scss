@@ -30,7 +30,7 @@ body {
       font-size: 22px;
       font-family: "Lato", sans-serif;
       letter-spacing: 0.05em;
-      z-index:4;
+      z-index: 4;
     }
     & div ul {
       margin: 0px;
@@ -74,7 +74,7 @@ body {
         height: 200px;
         text-align: center;
         font: 60px $font;
-        color: #ffffff;
+        color: $color1;
         letter-spacing: 0.05em;
         line-height: 1.1em;
         background-color: blu;
@@ -137,22 +137,31 @@ body {
       }
     }
     & .banner {
+      height: 250px;
       background: $color1;
       position: absolute;
       top: 2090px;
+      overflow: hidden;
       & .numbers {
         display: flex;
         justify-content: space-around;
         margin: 70px;
         list-style: none;
+        animation: cambiar 3s infinite;
 
         & li {
           font-family: $font;
           color: $colortext;
         }
       }
+      @keyframes cambiar{
+        0%{margin-top: 0;}
+        20%{margin-top: 0;}
+        25%{margin-top: 250px;}
+      }
     }
     & .date {
+      height: 250px;
       position: relative;
       top: -160px;
     }
@@ -161,6 +170,7 @@ body {
       justify-content: space-around;
       margin: 70px;
       list-style: none;
+      animation: cambiar 3s infinite;
       & li {
         text-align: center;
         color: $color2;
@@ -181,26 +191,25 @@ body {
         margin: auto;
         justify-content: space-around;
         flex-wrap: wrap;
-        & div.imagenpro{
+        & div.imagenpro {
           width: 50%;
           position: relative;
           height: 50%x;
-          & img{
+          & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
-          & .overlay{
+          & .overlay {
             position: absolute;
             bottom: 0;
             left: 0;
             background: rgba(0, 118, 192, 0.781);
             width: 100%;
-            // height: 0%;
-            transition: 1s ease;
+            transition: 2s ease;
             overflow: hidden;
 
-            & h4{
+            & h4 {
               color: #fafafa;
               font-size: 30px;
               position: absolute;
@@ -210,14 +219,140 @@ body {
               transform: translate(-50%, -50%);
             }
           }
-
         }
       }
+    }
+    & .clientes {
+      background: $colortext;
+      position: absolute;
+      top: 3500px;
+      & .logosclientes {
+        display: flex;
+        justify-content: space-around;
+        transition: 1s ease;
+        overflow: hidden;
+        & img {
+          filter: grayscale(100%);
+          &:hover {
+            filter: grayscale(0%);
+          }
+        }
+      }
+    }
+    & .contacto {
+      width: 100vw;
+      height: 1300px;
+      background-color: #ffff;
+      position: absolute;
+      top: 3950px;
+      & .maps {
+        position: relative;
+        left: 275px;
+      }
+      & .preguntas {
+        width: 426px;
+        position: relative;
+        left: 275px;
+        margin: 5px;
+        & h5 {
+          color: $color2;
+          font-size: 25px;
+          font-family: $font;
+        }
+        & p {
+          font-family: $font;
+          color: $color2;
+          position: relative;
+          font-size: 17px;
+        }
+      }
+      & .input {
+        width: 425px;
+        position: relative;
+        left: 275px;
+        & form {
+          // background-color: $colortext;
+          & input {
+            background-color: $colortext;
+            width: 425px;
+          }
+          & textarea {
+            background: $colortext;
+          }
+          & .submit {
+            color: white;
+            background: $color2;
+            width: 57px;
+            height: 32px;
+            font-size: 16px;
+            font-family: $font;
+          }
+        }
+      }
+      & .datoscontacto {
+        width: 300px;
+        height: 500px;
+        position: relative;
+        left: 800px;
+        top: -520px;
+        & .oficina {
+          & h5 {
+            font-size: 25px;
+            color: $color2;
+          }
+          & p {
+            color: $color2;
+            font-size: 17px;
+            line-height: 1.5em;
+          }
+          
+        }
+      }
+    }
+    
+  }
+  & footer{
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    top: 5250px;
+    & h4{
+      font-family: $font;
+      font-size: 14px;
+      text-align: center;
+    }
+    & .iconsrs{ 
+      width: 200px;
+      height: 60px;
+      display: flex;
+      position: relative;
+      left: 900px;
+      top: -60px;
+      & ul{
+        list-style: none;
+        & li{
+          float: left;
+          & a{
+            background: $colortitle;
+            display: block;
+            padding: 10px 10px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            text-align: center  ;
+            color: $colortext;
+          }
+        }
+      }
+
+
     }
   }
 }
 
-.imagenpro:hover .overlay{
+
+
+.imagenpro:hover .overlay {
   height: 100%;
   cursor: pointer;
 }

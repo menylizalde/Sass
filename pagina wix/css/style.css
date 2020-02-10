@@ -68,7 +68,7 @@ body section div h1 {
   height: 200px;
   text-align: center;
   font: 60px "Lato", sans-serif;
-  color: #ffffff;
+  color: #edcd1f;
   letter-spacing: 0.05em;
   line-height: 1.1em;
   background-color: blu;
@@ -128,21 +128,36 @@ body section .nosotros p {
   color: #3b3a3a;
 }
 body section .banner {
+  height: 250px;
   background: #edcd1f;
   position: absolute;
   top: 2090px;
+  overflow: hidden;
 }
 body section .banner .numbers {
   display: flex;
   justify-content: space-around;
   margin: 70px;
   list-style: none;
+  animation: cambiar 3s infinite;
 }
 body section .banner .numbers li {
   font-family: "Lato", sans-serif;
   color: #f7f7f7;
 }
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: 250px;
+  }
+}
 body section .date {
+  height: 250px;
   position: relative;
   top: -160px;
 }
@@ -151,6 +166,7 @@ body section .conceptos {
   justify-content: space-around;
   margin: 70px;
   list-style: none;
+  animation: cambiar 3s infinite;
 }
 body section .conceptos li {
   text-align: center;
@@ -188,7 +204,7 @@ body section div.proyectos div.containerimg div.imagenpro .overlay {
   left: 0;
   background: rgba(0, 118, 192, 0.781);
   width: 100%;
-  transition: 1s ease;
+  transition: 2s ease;
   overflow: hidden;
 }
 body section div.proyectos div.containerimg div.imagenpro .overlay h4 {
@@ -199,6 +215,122 @@ body section div.proyectos div.containerimg div.imagenpro .overlay h4 {
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+}
+body section .clientes {
+  background: #f7f7f7;
+  position: absolute;
+  top: 3500px;
+}
+body section .clientes .logosclientes {
+  display: flex;
+  justify-content: space-around;
+  transition: 1s ease;
+  overflow: hidden;
+}
+body section .clientes .logosclientes img {
+  filter: grayscale(100%);
+}
+body section .clientes .logosclientes img:hover {
+  filter: grayscale(0%);
+}
+body section .contacto {
+  width: 100vw;
+  height: 1300px;
+  background-color: #ffff;
+  position: absolute;
+  top: 3950px;
+}
+body section .contacto .maps {
+  position: relative;
+  left: 275px;
+}
+body section .contacto .preguntas {
+  width: 426px;
+  position: relative;
+  left: 275px;
+  margin: 5px;
+}
+body section .contacto .preguntas h5 {
+  color: #1e2d3b;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+}
+body section .contacto .preguntas p {
+  font-family: "Lato", sans-serif;
+  color: #1e2d3b;
+  position: relative;
+  font-size: 17px;
+}
+body section .contacto .input {
+  width: 425px;
+  position: relative;
+  left: 275px;
+}
+body section .contacto .input form input {
+  background-color: #f7f7f7;
+  width: 425px;
+}
+body section .contacto .input form textarea {
+  background: #f7f7f7;
+}
+body section .contacto .input form .submit {
+  color: white;
+  background: #1e2d3b;
+  width: 57px;
+  height: 32px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+body section .contacto .datoscontacto {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  left: 800px;
+  top: -520px;
+}
+body section .contacto .datoscontacto .oficina h5 {
+  font-size: 25px;
+  color: #1e2d3b;
+}
+body section .contacto .datoscontacto .oficina p {
+  color: #1e2d3b;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+body footer {
+  width: 100vw;
+  height: 70px;
+  position: absolute;
+  top: 5250px;
+}
+body footer h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+body footer .iconsrs {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  position: relative;
+  left: 900px;
+  top: -60px;
+}
+body footer .iconsrs ul {
+  list-style: none;
+}
+body footer .iconsrs ul li {
+  float: left;
+}
+body footer .iconsrs ul li a {
+  background: #c6c6c6;
+  display: block;
+  padding: 10px 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  text-align: center;
+  color: #f7f7f7;
 }
 
 .imagenpro:hover .overlay {
